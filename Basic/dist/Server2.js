@@ -26,12 +26,20 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const http = __importStar(require("http"));
 const server = http.createServer((req, res) => {
     setTimeout(() => {
-        console.log("Hello");
+        console.log("Hello123");
         res.writeHead(200, { "content-type": "text/html" });
         res.write("<html>");
         res.write("<h1>Hello World</h1>");
         res.write("</html>");
-    }, 4000);
+    }, 2000);
+    console.log("2145");
 });
 server.listen(3001);
+const Server2 = http.createServer((req, res) => {
+    res.writeHead(404, { "content-type": "text/html" });
+    res.write("<html>");
+    res.write("<h1>Not Found</h1>");
+    res.write("</html>");
+});
+Server2.listen(3002);
 //# sourceMappingURL=Server2.js.map

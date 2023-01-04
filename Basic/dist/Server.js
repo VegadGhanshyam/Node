@@ -68,6 +68,7 @@ const Server = http
     res.write("<html>");
     res.write("<h1>NodeJs is Future</h1>");
     res.write("</html>");
+    console.log("hello");
 })
     .listen(3000);
-//# sourceMappingURL=Service.js.map
+//# sourceMappingURL=Server.js.map
